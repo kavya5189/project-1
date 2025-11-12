@@ -1,12 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    nav {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00e0ff;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1.5rem;
+      border: 3px solid #00e0ff;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .card h3 {
+      color: #00e0ff;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      color: #bbb;
+    }
+    .socials a {
+      color: #00e0ff;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Open Source Enthusiast | GitHub Creator</p>
+  </header>
 
-<h1>This is a Heading</h1>
-<p>This paragraph.</p>
-<a href="second.html">link </a>a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Profile Picture">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm a passionate developer who loves creating elegant web experiences.
+      I enjoy working on open-source projects, exploring new technologies, and contributing to the developer community.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>🌟 Project One</h3>
+        <p>A beautiful landing page built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>⚙️ Project Two</h3>
+        <p>A Python tool for automating workflows and boosting productivity.</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>💡 Project Three</h3>
+        <p>A React-based dashboard with stunning UI and smooth animations.</p>
+        <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Have a project in mind or want to collaborate? Reach out to me via email or connect on social media.
+    </p>
+    <div class="socials">
+      <a href="https://github.com/yourusername" target="_blank">🐱</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">💼</a>
+      <a href="mailto:youremail@example.com">✉️</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. Built with ❤️ and GitHub Pages.</p>
+  </footer>
 </body>
 </html>
